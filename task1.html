@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="registerSection">
+            <h2>Register</h2>
+
+            <form id="registerForm">
+                <input type="text" id="regName" placeholder="Enter name" required>
+                <input type="email" id="regEmail" placeholder="Enter email" required>
+                <input type="password" id="regPassword" placeholder="Enter password" required>
+                <button type="submit">Register</button>
+            </form>
+
+            <p>Already have an account?
+                <a href="#" id="showLogin">Login</a>
+            </p>
+        </div>
+
+        <div id="loginSection" class="hidden">
+            <h2>Login</h2>
+
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Enter email" required>
+                <input type="password" id="loginPassword" placeholder="Enter password" required>
+                <button type="submit">Login</button>
+            </form>
+
+            <p>Don't have an account?
+                <a href="#" id="showRegister">Register</a>
+            </p>
+        </div>
+        <div id="dashboardSection" class="hidden">
+            <h2>Dashboard</h2>
+            <h3 id="welcomeMessage"></h3>
+            <p>You have successfully logged in!</p>
+            <button type="button" id="logoutBtn">Logout</button>
+        </div>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
